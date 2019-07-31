@@ -1,0 +1,29 @@
+@import "vars";
+@import "vendors";
+@import "fonts";
+@import "libs";
+@import "card";
+@import "datepicker";
+@import "hover";
+@import "button";
+@import "header";
+@import "logo";
+
+body {
+  font-family: 'Proxima Nova Rg', sans-serif;
+}
+.wrapper {
+  width: 936px;
+  margin: 0 auto;
+  @media all and (max-width: 950px) {
+    width: 95%;
+  }
+}
+
+.flex-container {
+  display: flex;
+}
+
+
+
+@import "media";

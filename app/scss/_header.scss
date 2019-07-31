@@ -1,0 +1,42 @@
+.header {
+  padding-bottom: 30px;
+}
+
+.page-heading {
+  margin-top: 40px;
+}
+.heading-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.heading {
+  font-weight: 400;
+  font-size: 35px;
+  margin: 0;
+  margin-right: 20px;
+  color: #262626;
+  font-family: "Myriad Pro";
+}
+.status-bar {
+  list-style: none;
+  padding: 0;
+  margin: 0 -14px 20px;
+  &_item {
+    color: #3d4044;
+    font-family: "Proxima Nova";
+    font-size: 17px;
+    margin: 0 14px;
+  }
+  &_counter {
+    font-weight: 700;
+  }
+}
+.date-of-the-beginning {
+  border: 1px solid #4090DB;
+  border-radius: 4px;
+  color: #4090DB;
+  height: 30px;
+  line-height: 31px;
+  padding: 0 15px 0 11px;
+}

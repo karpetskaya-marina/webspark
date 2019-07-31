@@ -1,0 +1,120 @@
+.page-content {
+  text-align: center;
+  background-color: #FAFAFA;
+  padding-top: 70px;
+  &_item {
+    margin-bottom: 30px;
+    padding: 0 15px;
+    position: relative;
+    flex-basis: calc(33.33% - 30px);
+    display: flex;
+  }
+  &_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px 15px;
+    justify-content: center;
+  }
+}
+.item-video {
+  position: relative;
+  &::before {
+    content: '';
+    display: block;
+    width: 38px;
+    height: 30px;
+    top: 10px;
+    right: 25px;
+    position: absolute;
+    background: url('../img/camera.png') 50% 50% no-repeat;
+    z-index: 10;
+  }
+}
+//post image
+.post {
+  position: relative;
+  overflow: hidden;
+  font-size: 0;
+  width: 100%;
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .5;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    transition: .6s;
+  }
+}
+//post info
+.post-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  width: 100%;
+  font-size: 17px;
+  font-weight: bold;
+  height: 100%;
+}
+.post-info_table {
+  text-align: left;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.table-row {
+  display: flex;
+  margin-bottom: 20px;
+}
+.table-header {
+  min-width: 80px;
+  margin-right: 15px;
+}
+.heart-icon, .message-icon, .play-icon {
+  position: relative;
+  padding-left: 26px;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 21px;
+    height: 19px;
+    background: url('../img/heart-icon.png') 50% 50% no-repeat;
+  }
+}
+.heart-icon, .play-icon {
+  min-width: 53px;
+}
+.message-icon {
+  padding-left: 24px;
+  &::before {
+    width: 17px;
+    height: 17px;
+    background-image: url('../img/message-icon.png');
+  }
+}
+.play-icon {
+  &::before {
+    width: 17px;
+    height: 21px;
+    background-image: url('../img/play-icon.png');
+  }
+}
+.post-info_upload {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}

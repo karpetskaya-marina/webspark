@@ -1,0 +1,52 @@
+@media all and (max-width: 931px) {
+  .logo {
+    margin-left: 0px;
+  }
+}
+@media all and (max-width: 850px) {
+  .page-content_item {
+    flex-basis: calc(50% - 30px);
+  }
+}
+@media all and (max-width: 868px) {
+  .logo {
+    margin-right: 30px;
+  }
+}
+
+@media all and (max-width: 665px) {
+  .logo {
+    width: 100px;
+    display: flex;
+    margin-top: 30px;
+    img {
+      width: 100%;
+    }
+  }
+  .heading {
+    font-size: 28px;
+  }
+  .date-block-title {
+    flex-basis: 100%;
+  }
+  .date-picker-wrapper {
+    flex-wrap: wrap;
+  }
+  .input-group {
+    margin: 0;
+    flex-grow: 1;
+    flex-basis: 100%;
+    &:first-of-type {
+      margin: 15px 0;
+    }
+  }
+}
+@media all and (max-width: 510px) {
+  .page-content_item {
+    flex-basis: calc(100% - 30px);
+  }
+  .heading-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

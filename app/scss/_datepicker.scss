@@ -1,0 +1,50 @@
+.date-picker-wrapper {
+  display: flex;
+  align-items: center;
+}
+.date-block-title {
+  font-size: 17px;
+  text-transform: capitalize;
+}
+.input-group {
+  margin: 0 12px;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  font-size: 0;
+  height: 32px;
+  position: relative;
+  input {
+    border: none;
+    line-height: 32px;
+    padding-left: 10px;
+    background: transparent;
+    font-size: 17px;
+    padding-right: 64px;
+    width: 100%;
+    width: calc(100% - 64px - 0.71em);
+  }
+}
+.input-group-addon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  display: inline-block;
+  height: 100%;
+  border-left: 1px solid #CCCCCC;
+  text-align: center;
+  vertical-align: top;
+  cursor: pointer;
+  &:last-child {
+    border-radius: 0 5px 5px 0;
+  }
+  &:first-of-type {
+    right: 32px;
+  }
+  &.close {
+    background: #EBEBEB url('../img/ic_close_black_24dp.png') 50% 50% no-repeat;
+  }
+  &.date-range {
+    background: #EBEBEB url('../img/ic_date_range.png') 50% 50% no-repeat;
+  }
+}

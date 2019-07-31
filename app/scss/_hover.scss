@@ -1,0 +1,9 @@
+@media all and (min-width: 1025px) {
+  .page-content_item:hover img {
+    transform: scale(1.05);
+  }
+  .btn-load-more:hover {
+    background-color: #707070;
+    color: #fff;
+  }
+}
