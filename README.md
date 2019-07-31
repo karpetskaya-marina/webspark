@@ -1,1 +1,2 @@
-# frontend_gulp_webpack_starter
+npm i
+gulp
